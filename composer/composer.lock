@@ -1,0 +1,3816 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "d99bebef51d95f16ade61694e83b0ca3",
+    "packages": [
+        {
+            "name": "contao-community-alliance/composer-client",
+            "version": "0.15.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-community-alliance/composer-client.git",
+                "reference": "7522880fbf104bd8ee0ddf15731fd27e320fd7e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-community-alliance/composer-client/zipball/7522880fbf104bd8ee0ddf15731fd27e320fd7e5",
+                "reference": "7522880fbf104bd8ee0ddf15731fd27e320fd7e5",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.2",
+                "contao/core": ">=2.11,<5-dev",
+                "php": ">=5.3.4"
+            },
+            "replace": {
+                "contao-community-alliance/composer": "self.version"
+            },
+            "require-dev": {
+                "contao-community-alliance/build-system-tool-branch-alias-validation": "~1.0",
+                "phpmd/phpmd": "~2.0",
+                "phpunit/phpunit": ">=3.7.10,<4-dev",
+                "squizlabs/php_codesniffer": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "src/system/modules/!composer": "system/modules/!composer"
+                    },
+                    "transifex": {
+                        "project": "composer",
+                        "prefix": "client-",
+                        "languages_cto": "src/system/modules/!composer/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-master": "0.15.x-dev",
+                    "dev-develop": "0.16.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tristan Lins",
+                    "email": "tristan.lins@bit3.de",
+                    "homepage": "http://bit3.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The contao composer client.",
+            "keywords": [
+                "client",
+                "composer",
+                "contao"
+            ],
+            "time": "2014-12-04 18:18:07"
+        },
+        {
+            "name": "contao-community-alliance/composer-plugin",
+            "version": "2.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-community-alliance/composer-plugin.git",
+                "reference": "0af8ad67c9c584adda04cf5643ade7c38056c2c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-community-alliance/composer-plugin/zipball/0af8ad67c9c584adda04cf5643ade7c38056c2c4",
+                "reference": "0af8ad67c9c584adda04cf5643ade7c38056c2c4",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0",
+                "php": ">=5.3.2"
+            },
+            "conflict": {
+                "contao-community-alliance/composer": "<0.9-dev",
+                "contao/core": "3.0.*"
+            },
+            "replace": {
+                "contao-community-alliance/composer-installer": "1.7.1"
+            },
+            "require-dev": {
+                "composer/composer": "dev-master",
+                "contao-community-alliance/build-system": "~1.0",
+                "contao-community-alliance/build-system-all-tasks": "~1.0",
+                "contao-community-alliance/coding-standard": "~1.0",
+                "contao/core": ">=2.11,<4.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "ContaoCommunityAlliance\\Composer\\Plugin\\Plugin",
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev",
+                    "dev-develop": "2.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "ContaoCommunityAlliance\\Composer\\Plugin": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "description": "Composer plugin that provide contao integration and installer.",
+            "homepage": "http://c-c-a.org/",
+            "time": "2014-11-26 06:24:53"
+        },
+        {
+            "name": "contao-community-alliance/dc-general",
+            "version": "2.0.0-beta23",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-community-alliance/dc-general.git",
+                "reference": "853362c001807f480a0d9d5d9388cfc67cb33388"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-community-alliance/dc-general/zipball/853362c001807f480a0d9d5d9388cfc67cb33388",
+                "reference": "853362c001807f480a0d9d5d9388cfc67cb33388",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao-community-alliance/event-dispatcher": "~1.3",
+                "contao-community-alliance/events-contao-bindings": ">=2.0,<4-dev",
+                "contao-community-alliance/translator": "~1.0",
+                "contao/core": ">=3.2,<3.5",
+                "php": ">=5.3",
+                "symfony/expression-language": "~2.4"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "replace": {
+                "metamodels/dc_general": "self.version"
+            },
+            "require-dev": {
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/dc-general"
+                    }
+                },
+                "branch-alias": {
+                    "dev-develop": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/DC_General.php",
+                    "src/ContaoCommunityAlliance/DcGeneral/DC_General.php"
+                ],
+                "psr-0": {
+                    "ContaoCommunityAlliance\\DcGeneral": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Isaak",
+                    "email": "info@andreas-isaak.de",
+                    "homepage": "http://www.andreas-isaak.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Tristan Lins",
+                    "email": "tristan.lins@bit3.de",
+                    "homepage": "http://bit3.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Universal data container for Contao",
+            "homepage": "http://c-c-a.org/",
+            "keywords": [
+                "container",
+                "contao",
+                "data",
+                "driver",
+                "framework",
+                "php"
+            ],
+            "time": "2015-03-24 05:07:21"
+        },
+        {
+            "name": "contao-community-alliance/dependency-container",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-community-alliance/dependency-container.git",
+                "reference": "15e7ef7f2c6e21e28a5355848a81d36d631be597"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-community-alliance/dependency-container/zipball/15e7ef7f2c6e21e28a5355848a81d36d631be597",
+                "reference": "15e7ef7f2c6e21e28a5355848a81d36d631be597",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5-dev",
+                "php": ">=5.3",
+                "pimple/pimple": "~1.0"
+            },
+            "replace": {
+                "bit3/contao-dependency-container": "self.version",
+                "contao-legacy/dependency-container": "self.version"
+            },
+            "require-dev": {
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/dependency-container"
+                    }
+                },
+                "branch-alias": {
+                    "dev-master": "1.8.x-dev",
+                    "dev-develop": "1.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "DependencyInjection\\Container": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Dependency container based on pimple for Contao open source cms.",
+            "homepage": "http://c-c-a.org/",
+            "keywords": [
+                "container",
+                "contao",
+                "dependency",
+                "di",
+                "injection"
+            ],
+            "time": "2015-02-05 17:52:59"
+        },
+        {
+            "name": "contao-community-alliance/event-dispatcher",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-community-alliance/event-dispatcher.git",
+                "reference": "fde30fa7e0c66dee2c30f5ee1ee90e394600b8a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-community-alliance/event-dispatcher/zipball/fde30fa7e0c66dee2c30f5ee1ee90e394600b8a0",
+                "reference": "fde30fa7e0c66dee2c30f5ee1ee90e394600b8a0",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao-community-alliance/dependency-container": "~1.6",
+                "contao/core": ">=2.11,<4-dev",
+                "php": ">=5.3",
+                "symfony/event-dispatcher": "~2.3"
+            },
+            "replace": {
+                "bit3/contao-event-dispatcher": "self.version"
+            },
+            "require-dev": {
+                "contao-community-alliance/build-system": "~1.0",
+                "contao-community-alliance/build-system-all-tasks": "~1.0",
+                "contao-community-alliance/coding-standard": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/event-dispatcher"
+                    }
+                },
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev",
+                    "dev-develop": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "ContaoCommunityAlliance\\Contao\\EventDispatcher": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tristan Lins",
+                    "email": "tristan.lins@bit3.de",
+                    "homepage": "http://bit3.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Event dispatcher service for Contao Open Source CMS",
+            "homepage": "http://c-c-a.org/",
+            "keywords": [
+                "contao",
+                "event"
+            ],
+            "time": "2014-11-28 14:49:55"
+        },
+        {
+            "name": "contao-community-alliance/events-contao-bindings",
+            "version": "dev-contao-3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-community-alliance/events-contao-bindings.git",
+                "reference": "36eee0e6d830d30d5dfe72739179008f0621a079"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-community-alliance/events-contao-bindings/zipball/36eee0e6d830d30d5dfe72739179008f0621a079",
+                "reference": "36eee0e6d830d30d5dfe72739179008f0621a079",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao-community-alliance/event-dispatcher": "~1.0",
+                "contao/core": "~3.2.0",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "metamodels/php-coding-standard": "dev-master",
+                "phpunit/phpunit": ">=3.7.10,<4-dev"
+            },
+            "type": "contao-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-contao-3.2": "3.2.x-dev"
+                },
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/events-contao-bindings"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "ContaoCommunityAlliance\\Contao\\Bindings": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Tristan Lins",
+                    "email": "tristan.lins@bit3.de",
+                    "homepage": "http://bit3.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Multipurpose translation manager and interface",
+            "homepage": "http://c-c-a.org/",
+            "keywords": [
+                "contao",
+                "translation"
+            ],
+            "time": "2014-11-08 18:39:45"
+        },
+        {
+            "name": "contao-community-alliance/meta-palettes",
+            "version": "1.9.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-community-alliance/meta-palettes.git",
+                "reference": "13117d539f29ff19163184f27c8a4df9a5cff03d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-community-alliance/meta-palettes/zipball/13117d539f29ff19163184f27c8a4df9a5cff03d",
+                "reference": "13117d539f29ff19163184f27c8a4df9a5cff03d",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=2.11,<4",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "metamodels/dc_general": "<1-dev"
+            },
+            "replace": {
+                "bit3/contao-meta-palettes": "self.version",
+                "contao-legacy/metapalettes": "self.version"
+            },
+            "require-dev": {
+                "bit3/php-coding-standard": "@dev",
+                "contao-community-alliance/dc-general": "~2.0.0@dev",
+                "phpmd/phpmd": "~2.0",
+                "phpunit/phpunit": ">=3.7.10,<4-dev",
+                "squizlabs/php_codesniffer": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/metapalettes"
+                    }
+                },
+                "branch-alias": {
+                    "dev-master": "1.9.x-dev",
+                    "dev-develop": "1.10.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bit3\\Contao\\MetaPalettes\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaPalettes extension for Contao OpenSource CMS",
+            "homepage": "http://bit3.de",
+            "keywords": [
+                "contao",
+                "page",
+                "title"
+            ],
+            "time": "2015-01-26 17:37:38"
+        },
+        {
+            "name": "contao-community-alliance/translator",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-community-alliance/translator.git",
+                "reference": "1fcdd08e9e01687bccb3b0f8fa8b449531423dba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-community-alliance/translator/zipball/1fcdd08e9e01687bccb3b0f8fa8b449531423dba",
+                "reference": "1fcdd08e9e01687bccb3b0f8fa8b449531423dba",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/event-dispatcher": "~1.0",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "ContaoCommunityAlliance\\Translator": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Multipurpose translation manager and interface",
+            "homepage": "http://c-c-a.org/",
+            "keywords": [
+                "contao",
+                "translation"
+            ],
+            "time": "2015-02-16 23:37:26"
+        },
+        {
+            "name": "contao-community-alliance/url-builder",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-community-alliance/url-builder.git",
+                "reference": "89730509bb4f83b21643a48e2f3f5199a5c4e679"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-community-alliance/url-builder/zipball/89730509bb4f83b21643a48e2f3f5199a5c4e679",
+                "reference": "89730509bb4f83b21643a48e2f3f5199a5c4e679",
+                "shasum": ""
+            },
+            "require": {
+                "contao/core": ">=2.11,<4-dev",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.0.*"
+            },
+            "require-dev": {
+                "contao-community-alliance/build-system": "~1.0",
+                "contao-community-alliance/build-system-tool-branch-alias-validation": "~1.0",
+                "phploc/phploc": "~2.0",
+                "phpmd/phpmd": "~2.0",
+                "phpunit/phpunit": "~3.7",
+                "sebastian/phpcpd": "~1.4",
+                "squizlabs/php_codesniffer": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev",
+                    "dev-develop": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "ContaoCommunityAlliance\\UrlBuilder": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "General purpose URL builder and manipulator.",
+            "time": "2014-09-20 03:32:06"
+        },
+        {
+            "name": "contao/core",
+            "version": "3.2.20",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-community-alliance/composerized-contao-core/zipball/1dbce3c75dba5f92fd068a45b71f04f1edbace49",
+                "reference": "3.2.20",
+                "shasum": "3.2.20"
+            },
+            "require": {
+                "contao-community-alliance/composer": "*"
+            },
+            "provide": {
+                "swiftmailer/swiftmailer": "5.2.1.0"
+            },
+            "type": "metapackage"
+        },
+        {
+            "name": "contao/official-demo",
+            "version": "3.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao/official-demo.git",
+                "reference": "9fdfdee4dc87c0f6bcd73b87082b49ad9b19f6e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao/official-demo/zipball/9fdfdee4dc87c0f6bcd73b87082b49ad9b19f6e2",
+                "reference": "9fdfdee4dc87c0f6bcd73b87082b49ad9b19f6e2",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": "3.2.*"
+            },
+            "replace": {
+                "contao-legacy/official_demo": "self.version"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "src/files/contaodemo": "files/contaodemo",
+                        "src/templates/contao_v32_official-demo.sql": "templates/contao_v32_official-demo.sql",
+                        "src/templates/contaodemo": "templates/contaodemo"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CC-BY-SA-4.0"
+            ],
+            "description": "Contao Official Demo",
+            "time": "2015-02-27 10:49:35"
+        },
+        {
+            "name": "discordier/justtextwidgets",
+            "version": "0.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/discordier/justtextwidgets.git",
+                "reference": "687e045b26bbec02404ac10776c6ccc1091de32a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/discordier/justtextwidgets/zipball/687e045b26bbec02404ac10776c6ccc1091de32a",
+                "reference": "687e045b26bbec02404ac10776c6ccc1091de32a",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "*",
+                "contao/core": ">=2.10,<4"
+            },
+            "replace": {
+                "contao-legacy/justtextwidgets": "*"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "src/system/modules/justtextwidgets": "system/modules/justtextwidgets"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Hidden fields with text values and explanation texts",
+            "homepage": "https://www.cyberspectrum.de",
+            "keywords": [
+                "contao",
+                "text",
+                "widget"
+            ],
+            "time": "2014-02-05 22:52:54"
+        },
+        {
+            "name": "doctrine/cache",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/cache.git",
+                "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/c9eadeb743ac6199f7eec423cb9426bc518b7b03",
+                "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "conflict": {
+                "doctrine/common": ">2.2,<2.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=3.7",
+                "predis/predis": "~1.0",
+                "satooshi/php-coveralls": "~0.6"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Cache\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Caching library offering an object-oriented API for many cache backends",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "cache",
+                "caching"
+            ],
+            "time": "2015-04-15 00:11:59"
+        },
+        {
+            "name": "menatwork/contao-multicolumnwizard",
+            "version": "3.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/menatwork/MultiColumnWizard.git",
+                "reference": "090018b247ea644a9bbb9f041f33981272460bad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/menatwork/MultiColumnWizard/zipball/090018b247ea644a9bbb9f041f33981272460bad",
+                "reference": "090018b247ea644a9bbb9f041f33981272460bad",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-installer": "*",
+                "contao/core": ">=2.10,<4"
+            },
+            "replace": {
+                "contao-legacy/multicolumnwizard": "*"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "system/modules/multicolumnwizard": "system/modules/multicolumnwizard"
+                    }
+                },
+                "branch-alias": {
+                    "dev-master": "3.3.x-dev",
+                    "dev-dev": "3.4.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "system/"
+                ],
+                "psr-4": {
+                    "MenAtWork\\MultiColumnWizard\\": "system/modules/multicolumnwizard/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tristan Lins",
+                    "email": "tristan.lins@bit3.de",
+                    "homepage": "http://bit3.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Schempp",
+                    "email": "andreas.schempp@terminal42.ch",
+                    "homepage": "http://www.terminal42.ch",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Yanick Witschi",
+                    "email": "yanick.witschi@terminal42.ch",
+                    "homepage": "http://www.terminal42.ch",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Isaak",
+                    "email": "contao@men-at-work.de",
+                    "homepage": "http://www.men-at-work.de",
+                    "role": "Project leader"
+                },
+                {
+                    "name": "David Maack",
+                    "email": "contao@men-at-work.de",
+                    "homepage": "http://www.men-at-work.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MultiColumWizard for Contao OpenSource CMS",
+            "homepage": "http://www.men-at-work.de",
+            "keywords": [
+                "contao",
+                "widget",
+                "wizard"
+            ],
+            "time": "2015-04-23 08:54:45"
+        },
+        {
+            "name": "metamodels/attribute_alias",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_alias.git",
+                "reference": "8ceb31698a499d132b3248b26026ec4c240e5979"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_alias/zipball/8ceb31698a499d132b3248b26026ec4c240e5979",
+                "reference": "8ceb31698a499d132b3248b26026ec4c240e5979",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "menatwork/contao-multicolumnwizard": "~3.3",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "contao-community-alliance/build-system": "~1.0",
+                "contao-community-alliance/build-system-all-tasks": "~1.0",
+                "contao-community-alliance/coding-standard": "~1.0",
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_alias"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_alias-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for alias",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "alias",
+                "attribute",
+                "contao",
+                "metamodels",
+                "nontranslatable"
+            ],
+            "time": "2015-01-29 17:36:33"
+        },
+        {
+            "name": "metamodels/attribute_checkbox",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_checkbox.git",
+                "reference": "e8cd5c6e7421ef6f9c288d14863a49ff7b8ccc25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_checkbox/zipball/e8cd5c6e7421ef6f9c288d14863a49ff7b8ccc25",
+                "reference": "e8cd5c6e7421ef6f9c288d14863a49ff7b8ccc25",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "contao-community-alliance/build-system": "~1.0",
+                "contao-community-alliance/build-system-all-tasks": "~1.0",
+                "contao-community-alliance/coding-standard": "~1.0",
+                "cyberspectrum/contao-toolbox": "~0.6"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_checkbox"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_checkbox-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for checkbox",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "checkbox",
+                "contao",
+                "metamodels",
+                "nontranslatable"
+            ],
+            "time": "2015-01-30 09:07:10"
+        },
+        {
+            "name": "metamodels/attribute_combinedvalues",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_combinedvalues.git",
+                "reference": "6cc84e16630cd414d8554ce3e70ad515ce48ad1c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_combinedvalues/zipball/6cc84e16630cd414d8554ce3e70ad515ce48ad1c",
+                "reference": "6cc84e16630cd414d8554ce3e70ad515ce48ad1c",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "contao-community-alliance/build-system-all-tasks": "~1.0",
+                "contao-community-alliance/coding-standard": "~1.0",
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/metamodelsattribute_combinedvalues"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_combinedvalues-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for combinedvalues",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "combinedvalues",
+                "contao",
+                "metamodels"
+            ],
+            "time": "2015-03-20 23:44:28"
+        },
+        {
+            "name": "metamodels/attribute_country",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_country.git",
+                "reference": "b7bb7fc60a6fdb12b04ed3c56c7b9834cee867a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_country/zipball/b7bb7fc60a6fdb12b04ed3c56c7b9834cee867a5",
+                "reference": "b7bb7fc60a6fdb12b04ed3c56c7b9834cee867a5",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "contao-community-alliance/build-system-all-tasks": "~1.0",
+                "contao-community-alliance/coding-standard": "~1.0",
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_country"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_country-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for country list",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "country",
+                "metamodels"
+            ],
+            "time": "2015-01-29 18:01:21"
+        },
+        {
+            "name": "metamodels/attribute_decimal",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_decimal.git",
+                "reference": "439c582ae5d4dc7a67d352ee77476e40378c6ae6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_decimal/zipball/439c582ae5d4dc7a67d352ee77476e40378c6ae6",
+                "reference": "439c582ae5d4dc7a67d352ee77476e40378c6ae6",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "contao-community-alliance/build-system": "~1.0",
+                "contao-community-alliance/build-system-all-tasks": "~1.0",
+                "contao-community-alliance/coding-standard": "~1.0",
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_decimal"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_decimal-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for decimal values",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "decimal",
+                "metamodels",
+                "nontranslatable"
+            ],
+            "time": "2015-01-29 18:04:31"
+        },
+        {
+            "name": "metamodels/attribute_file",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_file.git",
+                "reference": "310e2c07957bebc2b9077acfda7dafc586c7f0a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_file/zipball/310e2c07957bebc2b9077acfda7dafc586c7f0a0",
+                "reference": "310e2c07957bebc2b9077acfda7dafc586c7f0a0",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.0.*"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/metamodelsattribute_file"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_file-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for files",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "file",
+                "metamodels",
+                "nontranslatable"
+            ],
+            "time": "2015-03-24 05:17:25"
+        },
+        {
+            "name": "metamodels/attribute_langcode",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_langcode.git",
+                "reference": "13345874c0518851825bec4543f330d7f835f100"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_langcode/zipball/13345874c0518851825bec4543f330d7f835f100",
+                "reference": "13345874c0518851825bec4543f330d7f835f100",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "contao-community-alliance/build-system": "~1.0",
+                "contao-community-alliance/build-system-all-tasks": "~1.0",
+                "contao-community-alliance/coding-standard": "~1.0",
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_langcode"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_langcode-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for langcodes",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "langcode",
+                "metamodels"
+            ],
+            "time": "2015-01-29 20:13:11"
+        },
+        {
+            "name": "metamodels/attribute_longtext",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_longtext.git",
+                "reference": "a35e7ae6872dafba82e081e2ac2617d994755418"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_longtext/zipball/a35e7ae6872dafba82e081e2ac2617d994755418",
+                "reference": "a35e7ae6872dafba82e081e2ac2617d994755418",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.0.*"
+            },
+            "require-dev": {
+                "contao-community-alliance/build-system-all-tasks": "~1.0",
+                "contao-community-alliance/coding-standard": "~1.0",
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/metamodelsattribute_longtext"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_longtext-",
+                        "languages_cto": "src/system/modules/metamodelsattribute_longtext/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for longtext",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "longtext",
+                "metamodels",
+                "nontranslatable"
+            ],
+            "time": "2015-03-26 20:17:28"
+        },
+        {
+            "name": "metamodels/attribute_numeric",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_numeric.git",
+                "reference": "bec96deb5ecea547f85bdde8501c0fd6b43cf365"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_numeric/zipball/bec96deb5ecea547f85bdde8501c0fd6b43cf365",
+                "reference": "bec96deb5ecea547f85bdde8501c0fd6b43cf365",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "contao-community-alliance/build-system": "~1.0",
+                "contao-community-alliance/build-system-all-tasks": "~1.0",
+                "contao-community-alliance/coding-standard": "~1.0",
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/metamodelsattribute_numeric"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_numeric-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for numeric values",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "metamodels",
+                "numeric"
+            ],
+            "time": "2015-01-29 21:43:58"
+        },
+        {
+            "name": "metamodels/attribute_select",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_select.git",
+                "reference": "ae05cf21ce1b6ab38bb00a37313474353fa7f860"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_select/zipball/ae05cf21ce1b6ab38bb00a37313474353fa7f860",
+                "reference": "ae05cf21ce1b6ab38bb00a37313474353fa7f860",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/metamodelsattribute_select"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_select-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Oliver Hoff",
+                    "email": "oliver@hofff.com",
+                    "homepage": "http://www.hofff.com/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Isaak",
+                    "email": "info@andreas-isaak.de",
+                    "homepage": "http://www.andreas-isaak.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Christian de la Haye",
+                    "email": "service@delahaye.de",
+                    "homepage": "http://www.delahaye.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for selects",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "metamodels",
+                "nontranslatable",
+                "select"
+            ],
+            "time": "2015-05-04 22:18:04"
+        },
+        {
+            "name": "metamodels/attribute_tabletext",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_tabletext.git",
+                "reference": "212e4c32d8efc252eb7b605c684192446a5f43f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_tabletext/zipball/212e4c32d8efc252eb7b605c684192446a5f43f8",
+                "reference": "212e4c32d8efc252eb7b605c684192446a5f43f8",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.0.*"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/metamodelsattribute_tabletext"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_tabletext-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for dynamic table text",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "metamodels",
+                "nontranslatable",
+                "tabletext",
+                "text"
+            ],
+            "time": "2015-02-02 11:06:58"
+        },
+        {
+            "name": "metamodels/attribute_tags",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_tags.git",
+                "reference": "5b012cc8715fcdba0f1208622338fc41b6c32d76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_tags/zipball/5b012cc8715fcdba0f1208622338fc41b6c32d76",
+                "reference": "5b012cc8715fcdba0f1208622338fc41b6c32d76",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/attribute_select": "~2.0",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_tags"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_tags-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for tags",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "metamodels",
+                "nontranslatable",
+                "tags"
+            ],
+            "time": "2015-05-04 17:06:54"
+        },
+        {
+            "name": "metamodels/attribute_text",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_text.git",
+                "reference": "3023cd9f502ffa55f785af740bb5a82068b6a506"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_text/zipball/3023cd9f502ffa55f785af740bb5a82068b6a506",
+                "reference": "3023cd9f502ffa55f785af740bb5a82068b6a506",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_text"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_text-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for selects",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "metamodels",
+                "nontranslatable",
+                "text"
+            ],
+            "time": "2015-01-30 05:34:20"
+        },
+        {
+            "name": "metamodels/attribute_timestamp",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_timestamp.git",
+                "reference": "a148da651ad90988c2fcf6bd8ab10c11b779f9c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_timestamp/zipball/a148da651ad90988c2fcf6bd8ab10c11b779f9c7",
+                "reference": "a148da651ad90988c2fcf6bd8ab10c11b779f9c7",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao-community-alliance/events-contao-bindings": "*",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/attribute_numeric": "~2.0",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/metamodelsattribute_timestamp"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_timestamp-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for timestamps",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "metamodels",
+                "timestamp"
+            ],
+            "time": "2015-03-26 09:21:49"
+        },
+        {
+            "name": "metamodels/attribute_translatedalias",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_translatedalias.git",
+                "reference": "3f68cd8d7be8adc601f6a56d2ada9fbf87c8de18"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_translatedalias/zipball/3f68cd8d7be8adc601f6a56d2ada9fbf87c8de18",
+                "reference": "3f68cd8d7be8adc601f6a56d2ada9fbf87c8de18",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_translatedalias"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_translatedalias-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for translated alias",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "alias",
+                "attribute",
+                "contao",
+                "metamodels",
+                "translatable"
+            ],
+            "time": "2015-01-30 06:35:53"
+        },
+        {
+            "name": "metamodels/attribute_translatedcheckbox",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_translatedcheckbox.git",
+                "reference": "3813e42444a156224c23feab536d470e1d704a32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_translatedcheckbox/zipball/3813e42444a156224c23feab536d470e1d704a32",
+                "reference": "3813e42444a156224c23feab536d470e1d704a32",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "dev-master",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_translatedcheckbox"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_translatedcheckbox-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for translated checkbox",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "checkbox",
+                "contao",
+                "metamodels",
+                "translatable"
+            ],
+            "time": "2015-01-30 09:30:26"
+        },
+        {
+            "name": "metamodels/attribute_translatedcombinedvalues",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_translatedcombinedvalues.git",
+                "reference": "310be8e756f4ccbba31c148f79d86da834569094"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_translatedcombinedvalues/zipball/310be8e756f4ccbba31c148f79d86da834569094",
+                "reference": "310be8e756f4ccbba31c148f79d86da834569094",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_translatedcombinedvalues"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_translatedcombinedvalues-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for translated combinedvalues",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "combinedvalues",
+                "contao",
+                "metamodels",
+                "translatable"
+            ],
+            "time": "2015-02-03 17:59:19"
+        },
+        {
+            "name": "metamodels/attribute_translatedfile",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_translatedfile.git",
+                "reference": "86e7eb3af9679480b78120547555a09eee00e4ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_translatedfile/zipball/86e7eb3af9679480b78120547555a09eee00e4ba",
+                "reference": "86e7eb3af9679480b78120547555a09eee00e4ba",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "dev-master",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_translatedfile"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_translatedfile-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for translated files",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "file",
+                "metamodels",
+                "translatable"
+            ],
+            "time": "2015-04-15 17:39:35"
+        },
+        {
+            "name": "metamodels/attribute_translatedlongtext",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_translatedlongtext.git",
+                "reference": "52a3b7574e7a01d4d44677f29e1600e59532fba3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_translatedlongtext/zipball/52a3b7574e7a01d4d44677f29e1600e59532fba3",
+                "reference": "52a3b7574e7a01d4d44677f29e1600e59532fba3",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_translatedlongtext"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_translatedlongtext-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for translated longtext",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "longtext",
+                "metamodels",
+                "translatable"
+            ],
+            "time": "2015-02-05 21:51:54"
+        },
+        {
+            "name": "metamodels/attribute_translatedselect",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_translatedselect.git",
+                "reference": "5753034da7c5b548e2dafd1876603130910fff03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_translatedselect/zipball/5753034da7c5b548e2dafd1876603130910fff03",
+                "reference": "5753034da7c5b548e2dafd1876603130910fff03",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/attribute_select": "~2.0",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.0.*"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "dev-master",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_translatedselect"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_translatedselect-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for translated selects",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "metamodels",
+                "select",
+                "translatable"
+            ],
+            "time": "2015-02-18 02:05:09"
+        },
+        {
+            "name": "metamodels/attribute_translatedtabletext",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_translatedtabletext.git",
+                "reference": "e936db4b57f52e743a3f5064ddc0327b5bfd13af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_translatedtabletext/zipball/e936db4b57f52e743a3f5064ddc0327b5bfd13af",
+                "reference": "e936db4b57f52e743a3f5064ddc0327b5bfd13af",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_translatedtabletext"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_translatedtabletext-",
+                        "languages_cto": "src/system/modules/metamodelsattribute_translatedtabletext/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for dynamic translated table text",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "metamodels",
+                "tabletext",
+                "text",
+                "translatable"
+            ],
+            "time": "2015-02-17 18:10:52"
+        },
+        {
+            "name": "metamodels/attribute_translatedtags",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_translatedtags.git",
+                "reference": "10ec3588d8027d9d6cd8967be1b7c0c2a2f638db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_translatedtags/zipball/10ec3588d8027d9d6cd8967be1b7c0c2a2f638db",
+                "reference": "10ec3588d8027d9d6cd8967be1b7c0c2a2f638db",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/attribute_tags": "~2.0",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "contao-community-alliance/build-system": "~1.0",
+                "contao-community-alliance/build-system-all-tasks": "~1.0",
+                "contao-community-alliance/coding-standard": "~1.0",
+                "cyberspectrum/contao-toolbox": "dev-master",
+                "metamodels/base-unit-tests": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_translatedtags"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_translatedtags-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for translated text",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "metamodels",
+                "tags",
+                "translatable"
+            ],
+            "time": "2015-02-18 01:41:47"
+        },
+        {
+            "name": "metamodels/attribute_translatedtext",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_translatedtext.git",
+                "reference": "57445949d81bc9abb746180964af0d6913e04821"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_translatedtext/zipball/57445949d81bc9abb746180964af0d6913e04821",
+                "reference": "57445949d81bc9abb746180964af0d6913e04821",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "dev-master",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_translatedtext"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_translatedtext-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for translated text",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "metamodels",
+                "text",
+                "translatable"
+            ],
+            "time": "2015-02-17 19:34:56"
+        },
+        {
+            "name": "metamodels/attribute_url",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/attribute_url.git",
+                "reference": "6e4d7b3c45ef95a838bfc43345354ae51f5f3b22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/attribute_url/zipball/6e4d7b3c45ef95a838bfc43345354ae51f5f3b22",
+                "reference": "6e4d7b3c45ef95a838bfc43345354ae51f5f3b22",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsattribute_url"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "attribute_url-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels attribute for urls",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "attribute",
+                "contao",
+                "metamodels",
+                "url"
+            ],
+            "time": "2015-02-17 21:12:53"
+        },
+        {
+            "name": "metamodels/bundle_all",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/bundle_all.git",
+                "reference": "f58927471eb80640862b7eefbc6cebefeeeb8159"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/bundle_all/zipball/f58927471eb80640862b7eefbc6cebefeeeb8159",
+                "reference": "f58927471eb80640862b7eefbc6cebefeeeb8159",
+                "shasum": ""
+            },
+            "require": {
+                "metamodels/bundle_attributes": "*",
+                "metamodels/bundle_filter": "*"
+            },
+            "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Isaak",
+                    "email": "info@andreas-isaak.de",
+                    "homepage": "http://www.andreas-isaak.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Christian de la Haye",
+                    "email": "service@delahaye.de",
+                    "homepage": "http://www.delahaye.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Universal MetaModels bundle",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "bundle",
+                "contao",
+                "metamodels",
+                "metapackage"
+            ],
+            "time": "2013-10-01 20:03:31"
+        },
+        {
+            "name": "metamodels/bundle_attributes",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/bundle_attributes.git",
+                "reference": "058e26943c313c63f45623ff4c0c54fa9ad7cf93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/bundle_attributes/zipball/058e26943c313c63f45623ff4c0c54fa9ad7cf93",
+                "reference": "058e26943c313c63f45623ff4c0c54fa9ad7cf93",
+                "shasum": ""
+            },
+            "require": {
+                "metamodels/attribute_combinedvalues": "*",
+                "metamodels/attribute_country": "*",
+                "metamodels/attribute_decimal": "*",
+                "metamodels/attribute_langcode": "*",
+                "metamodels/attribute_numeric": "*",
+                "metamodels/attribute_timestamp": "*",
+                "metamodels/attribute_url": "*",
+                "metamodels/bundle_nontranslated": "*",
+                "metamodels/bundle_translated": "*"
+            },
+            "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Isaak",
+                    "email": "info@andreas-isaak.de",
+                    "homepage": "http://www.andreas-isaak.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Christian de la Haye",
+                    "email": "service@delahaye.de",
+                    "homepage": "http://www.delahaye.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels bundle for all attributes",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "bundle",
+                "contao",
+                "metamodels",
+                "metapackage"
+            ],
+            "time": "2014-02-03 14:19:34"
+        },
+        {
+            "name": "metamodels/bundle_filter",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/bundle_filter.git",
+                "reference": "45d9cf01060c7736c5138b03592a0b284b25fe92"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/bundle_filter/zipball/45d9cf01060c7736c5138b03592a0b284b25fe92",
+                "reference": "45d9cf01060c7736c5138b03592a0b284b25fe92",
+                "shasum": ""
+            },
+            "require": {
+                "metamodels/filter_checkbox": "*",
+                "metamodels/filter_fromto": "*",
+                "metamodels/filter_range": "*",
+                "metamodels/filter_select": "*",
+                "metamodels/filter_tags": "*",
+                "metamodels/filter_text": "*"
+            },
+            "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Isaak",
+                    "email": "info@andreas-isaak.de",
+                    "homepage": "http://www.andreas-isaak.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Christian de la Haye",
+                    "email": "service@delahaye.de",
+                    "homepage": "http://www.delahaye.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels bundle for filter",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "bundle",
+                "contao",
+                "metamodels",
+                "metapackage"
+            ],
+            "time": "2013-05-03 07:16:44"
+        },
+        {
+            "name": "metamodels/bundle_nontranslated",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/bundle_nontranslated.git",
+                "reference": "5f2b3fabc763ed1bea7353b8c4c250a0b52e2f3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/bundle_nontranslated/zipball/5f2b3fabc763ed1bea7353b8c4c250a0b52e2f3a",
+                "reference": "5f2b3fabc763ed1bea7353b8c4c250a0b52e2f3a",
+                "shasum": ""
+            },
+            "require": {
+                "metamodels/attribute_alias": "*@dev",
+                "metamodels/attribute_checkbox": "*@dev",
+                "metamodels/attribute_combinedvalues": "*@dev",
+                "metamodels/attribute_file": "*@dev",
+                "metamodels/attribute_longtext": "*@dev",
+                "metamodels/attribute_select": "*@dev",
+                "metamodels/attribute_tabletext": "*@dev",
+                "metamodels/attribute_tags": "*@dev",
+                "metamodels/attribute_text": "*@dev"
+            },
+            "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Isaak",
+                    "email": "info@andreas-isaak.de",
+                    "homepage": "http://www.andreas-isaak.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Christian de la Haye",
+                    "email": "service@delahaye.de",
+                    "homepage": "http://www.delahaye.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels bundle for non translated attributes",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "bundle",
+                "contao",
+                "metamodels",
+                "metapackage"
+            ],
+            "time": "2014-02-17 14:37:26"
+        },
+        {
+            "name": "metamodels/bundle_translated",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/bundle_translated.git",
+                "reference": "4bc0c1a0522a5be0cb0957daf9181e47fe49eb1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/bundle_translated/zipball/4bc0c1a0522a5be0cb0957daf9181e47fe49eb1a",
+                "reference": "4bc0c1a0522a5be0cb0957daf9181e47fe49eb1a",
+                "shasum": ""
+            },
+            "require": {
+                "metamodels/attribute_translatedalias": "*@dev",
+                "metamodels/attribute_translatedcheckbox": "*@dev",
+                "metamodels/attribute_translatedcombinedvalues": "*@dev",
+                "metamodels/attribute_translatedfile": "*@dev",
+                "metamodels/attribute_translatedlongtext": "*@dev",
+                "metamodels/attribute_translatedselect": "*@dev",
+                "metamodels/attribute_translatedtabletext": "*@dev",
+                "metamodels/attribute_translatedtags": "*@dev",
+                "metamodels/attribute_translatedtext": "*@dev"
+            },
+            "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Isaak",
+                    "email": "info@andreas-isaak.de",
+                    "homepage": "http://www.andreas-isaak.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Christian de la Haye",
+                    "email": "service@delahaye.de",
+                    "homepage": "http://www.delahaye.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels bundle for translated attributes",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "bundle",
+                "contao",
+                "metamodels",
+                "metapackage"
+            ],
+            "time": "2014-02-17 14:34:39"
+        },
+        {
+            "name": "metamodels/core",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/core.git",
+                "reference": "1f4fd69bf33023c060e0a394dfeac688b9bfa65b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/core/zipball/1f4fd69bf33023c060e0a394dfeac688b9bfa65b",
+                "reference": "1f4fd69bf33023c060e0a394dfeac688b9bfa65b",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao-community-alliance/dc-general": "~2.0",
+                "contao-community-alliance/dependency-container": "~1.6",
+                "contao-community-alliance/event-dispatcher": "~1.3",
+                "contao-community-alliance/events-contao-bindings": "~3.2",
+                "contao-community-alliance/meta-palettes": "~1.7",
+                "contao-community-alliance/url-builder": "~1.1",
+                "contao/core": ">=3.2,<3.5",
+                "discordier/justtextwidgets": "~0.5",
+                "doctrine/cache": "~1.3",
+                "menatwork/contao-multicolumnwizard": "~3.3",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "dev-master",
+                "metamodels/base-unit-tests": "~1.0",
+                "metamodels/phpunit-contao-database": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/metamodels"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "core-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    },
+                    "runonce": [
+                        "runonce/runonce.php"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels core",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "contao",
+                "core",
+                "metamodels"
+            ],
+            "time": "2015-05-05 21:56:41"
+        },
+        {
+            "name": "metamodels/filter_checkbox",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/filter_checkbox.git",
+                "reference": "7d06b8e48c63c65b96273028e436dc05ccbcfe5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/filter_checkbox/zipball/7d06b8e48c63c65b96273028e436dc05ccbcfe5d",
+                "reference": "7d06b8e48c63c65b96273028e436dc05ccbcfe5d",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/metamodelsfilter_checkbox"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "filter_checkbox-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels checkbox filter",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "checkbox",
+                "contao",
+                "filter",
+                "metamodels"
+            ],
+            "time": "2015-02-17 21:46:24"
+        },
+        {
+            "name": "metamodels/filter_fromto",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/filter_fromto.git",
+                "reference": "d84ea153f22d95547b4ac45676fe1dce8b1f6a4a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/filter_fromto/zipball/d84ea153f22d95547b4ac45676fe1dce8b1f6a4a",
+                "reference": "d84ea153f22d95547b4ac45676fe1dce8b1f6a4a",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "metamodels/base-unit-tests": "~1.0",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/metamodelsfilter_fromto"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "filter_fromto-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels fromto filter",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "contao",
+                "filter",
+                "fromto",
+                "metamodels"
+            ],
+            "time": "2015-03-19 08:13:52"
+        },
+        {
+            "name": "metamodels/filter_range",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/filter_range.git",
+                "reference": "401e66b13d3c8bcf0e1a495ccc29f1e7fb29e3c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/filter_range/zipball/401e66b13d3c8bcf0e1a495ccc29f1e7fb29e3c1",
+                "reference": "401e66b13d3c8bcf0e1a495ccc29f1e7fb29e3c1",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "cyberspectrum/contao-toolbox": "~0.6",
+                "phpcq/all-tasks": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsfilter_range"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "filter_range-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels range filter",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "contao",
+                "filter",
+                "metamodels",
+                "range"
+            ],
+            "time": "2015-04-07 22:50:59"
+        },
+        {
+            "name": "metamodels/filter_select",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/filter_select.git",
+                "reference": "5978066d167c991c6bd0dd26f28dbcf9a5e6e792"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/filter_select/zipball/5978066d167c991c6bd0dd26f28dbcf9a5e6e792",
+                "reference": "5978066d167c991c6bd0dd26f28dbcf9a5e6e792",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "contao-community-alliance/build-system": "~1.0",
+                "contao-community-alliance/build-system-all-tasks": "~1.0",
+                "contao-community-alliance/coding-standard": "~1.0",
+                "cyberspectrum/contao-toolbox": "dev-master",
+                "metamodels/base-unit-tests": "~1.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "symlinks": {
+                        "contao": "system/modules/metamodelsfilter_select"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "filter_select-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels select filter",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "contao",
+                "filter",
+                "metamodels",
+                "select"
+            ],
+            "time": "2015-01-10 05:37:20"
+        },
+        {
+            "name": "metamodels/filter_tags",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/filter_tags.git",
+                "reference": "1127e520a79029c6d7e8756aee3a59a00f422824"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/filter_tags/zipball/1127e520a79029c6d7e8756aee3a59a00f422824",
+                "reference": "1127e520a79029c6d7e8756aee3a59a00f422824",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "contao-community-alliance/build-system": "~1.0",
+                "contao-community-alliance/build-system-all-tasks": "~1.0",
+                "contao-community-alliance/coding-standard": "~1.0",
+                "cyberspectrum/contao-toolbox": "dev-master"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/metamodelsfilter_tags"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "filter_tags-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels tags filter",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "contao",
+                "filter",
+                "metamodels",
+                "tags"
+            ],
+            "time": "2015-02-18 01:59:32"
+        },
+        {
+            "name": "metamodels/filter_text",
+            "version": "dev-tng",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MetaModels/filter_text.git",
+                "reference": "b20bbf4997dd5b946cfa0c9164e6bd4d4012eaa5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MetaModels/filter_text/zipball/b20bbf4997dd5b946cfa0c9164e6bd4d4012eaa5",
+                "reference": "b20bbf4997dd5b946cfa0c9164e6bd4d4012eaa5",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0",
+                "contao/core": ">=3.2,<3.5",
+                "metamodels/core": "~2.0",
+                "php": ">=5.3"
+            },
+            "conflict": {
+                "contao/core": "3.4.0"
+            },
+            "require-dev": {
+                "contao-community-alliance/build-system": "~1.0",
+                "contao-community-alliance/build-system-all-tasks": "~1.0",
+                "contao-community-alliance/coding-standard": "~1.0",
+                "cyberspectrum/contao-toolbox": "dev-master"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/metamodelsfilter_text"
+                    },
+                    "transifex": {
+                        "project": "metamodels",
+                        "prefix": "filter_text-",
+                        "languages_cto": "contao/languages",
+                        "languages_tx": ".tx"
+                    }
+                },
+                "branch-alias": {
+                    "dev-tng": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "MetaModels": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Schiffler",
+                    "email": "c.schiffler@cyberspectrum.de",
+                    "homepage": "http://www.cyberspectrum.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Stefan Heimes",
+                    "email": "stefan_heimes@hotmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaModels text filter",
+            "homepage": "http://now.metamodel.me/",
+            "keywords": [
+                "contao",
+                "filter",
+                "metamodels",
+                "text"
+            ],
+            "time": "2015-04-24 13:34:49"
+        },
+        {
+            "name": "pimple/pimple",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silexphp/Pimple.git",
+                "reference": "2019c145fe393923f3441b23f29bbdfaa5c58c4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/2019c145fe393923f3441b23f29bbdfaa5c58c4d",
+                "reference": "2019c145fe393923f3441b23f29bbdfaa5c58c4d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pimple": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Pimple is a simple Dependency Injection Container for PHP 5.3",
+            "homepage": "http://pimple.sensiolabs.org",
+            "keywords": [
+                "container",
+                "dependency injection"
+            ],
+            "time": "2013-11-22 08:30:29"
+        },
+        {
+            "name": "symfony/event-dispatcher",
+            "version": "v2.6.7",
+            "target-dir": "Symfony/Component/EventDispatcher",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/EventDispatcher.git",
+                "reference": "672593bc4b0043a0acf91903bb75a1c82d8f2e02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/672593bc4b0043a0acf91903bb75a1c82d8f2e02",
+                "reference": "672593bc4b0043a0acf91903bb75a1c82d8f2e02",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "~2.0,>=2.0.5",
+                "symfony/dependency-injection": "~2.6",
+                "symfony/expression-language": "~2.6",
+                "symfony/phpunit-bridge": "~2.7",
+                "symfony/stopwatch": "~2.3"
+            },
+            "suggest": {
+                "symfony/dependency-injection": "",
+                "symfony/http-kernel": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\EventDispatcher\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony EventDispatcher Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-05-02 15:18:45"
+        },
+        {
+            "name": "symfony/expression-language",
+            "version": "v2.6.7",
+            "target-dir": "Symfony/Component/ExpressionLanguage",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/expression-language.git",
+                "reference": "f4cffea2eca850203d28209a5cbad5ad2e34b243"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/expression-language/zipball/f4cffea2eca850203d28209a5cbad5ad2e34b243",
+                "reference": "f4cffea2eca850203d28209a5cbad5ad2e34b243",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\ExpressionLanguage\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony ExpressionLanguage Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-05-01 14:14:24"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "metamodels/core": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

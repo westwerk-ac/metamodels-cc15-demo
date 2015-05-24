@@ -1,0 +1,51 @@
+# DISCLAIMER
+# -----------------------------------------------
+# We use this gitignore to manage contao projects
+# in .git repositories. It's totaly different from
+# the core .gitignore since we are including all
+# project-content files/, exclude localconfig, use
+# composer in every project, include core modules
+# (and composer symlinks) if you don't know how to
+# handle this gitignore try this snippet:
+# https://bitbucket.org/snippets/westwerk/Kny5
+# ------------------------------------------------
+
+.DS_Store
+.idea
+node_modules/
+npm-debug.log
+notes
+
+files/theme/assets/*
+files/theme/css/*
+files/theme/fonts/*
+
+/assets/js/*
+/assets/css/*
+/assets/css/maps/*
+/assets/images/*/*
+!/assets/images/*/.gitkeep
+
+/.htaccess
+/*.xml
+/contao/update.phar.php
+/share/*.xml
+
+/system/cache/*
+/system/config/dcaconfig.php
+/system/config/initconfig.php
+/system/config/langconfig.php
+/system/config/pathconfig.php
+/system/config/databaseconfig.php
+/system/cron/cron.txt
+/system/logs/*
+/system/tmp/*
+
+/system/modules/*
+!/system/modules/milk-u21
+
+/vendor/
+/composer/cache/*
+/composer/vendor/*
+*.out
+*.json~
