@@ -5,6 +5,11 @@ A little about Jennifer: Simul partem mediocritatem est ad, eu sed luptatum post
 jennifer.connors@example.com
 303-555-3434
 
+3100 Marine Street
+Office 505
+548 UCB
+Boulder, CO 80309-0584
+
 ----------------------------
 
 John Smith
@@ -14,6 +19,9 @@ A little about John: Mauris sem ipsum, commodo eget euismod quis, auctor a ipsum
 john.smoth@example.com
 303-555-5656
 
+1234 Main Street
+Boulder, CO 80309
+
 ----------------------------
 
 Bob Anderson
@@ -22,3 +30,8 @@ A little about Bob: Read more about him and what he's been up to.
 
 bob.anderson@example.com
 303-555-1212
+
+3100 Marine Street
+Office 500
+548 UCB
+Boulder, CO 80309-0584
