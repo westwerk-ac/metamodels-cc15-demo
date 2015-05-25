@@ -1,0 +1,1 @@
+<span class="text<?php echo $this->additional_class; ?>"><?php echo nl2br($this->raw;) ?></span>
